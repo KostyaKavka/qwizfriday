@@ -2,9 +2,8 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "FridayQwiz",
+    "database": "QuizPlz",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
- 
 }
