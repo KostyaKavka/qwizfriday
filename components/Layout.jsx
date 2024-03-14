@@ -1,17 +1,18 @@
 const React = require('react');
 const Navbar = require('./Navbar');
 
-module.exports = function Layout({ title, children, user }) {
+module.exports = function Layout({ title, children }) {
   return (
     <html lang="en">
       <head>
         <title>{title}</title>
-        {/* <link rel="stylesheet" href="/css/style.css" /> */}
-        {/* <link href="/styles/bootstrap.css" rel="stylesheet" crossorigin="anonymous"></link> */}
+        <link rel="stylesheet" href="/styles/navbar.css" />
+        <link rel="stylesheet" href="/styles/index.css" />
+
         {/* <script src="/scripts/test.js" /> */}
       </head>
       <body>
-        {/* <NavBar user={user} /> */}
+        <Navbar />
         {children}
       </body>
     </html>
