@@ -1,1 +1,15 @@
-asdasdadfconsole.log()
+npx sequelize model:create --name User --attributes name:text,email:text,password:text,score:integer
+npx sequelize model:create --name Category --attributes title:text,img:text
+npx sequelize model:create --name Question --attributes answer:text,question:text,img:text,categoryId:integer
+
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "QuizPlz",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
+
+npx sequelize seed:create --name Question
