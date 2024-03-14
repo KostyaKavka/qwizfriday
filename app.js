@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const indexRouter = require('./routes/index');
+const indexRouter = require('./routes/views/index');
 const ssr = require('./middleware/ssr');
 // const getUser = require('./middleware/getUser');
 
