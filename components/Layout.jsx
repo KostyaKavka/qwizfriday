@@ -1,5 +1,5 @@
 const React = require('react');
-const NavBar = require('./NavBar');
+// const NavBar = require('./Navbar');
 
 module.exports = function Layout({ title, children, user }) {
   return (
@@ -11,7 +11,7 @@ module.exports = function Layout({ title, children, user }) {
         {/* <script src="/scripts/test.js" /> */}
       </head>
       <body>
-        <NavBar user={user} />
+        {/* <NavBar user={user} /> */}
         {children}
       </body>
     </html>

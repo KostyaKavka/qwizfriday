@@ -1,7 +1,8 @@
-const React = require('react');
+// const React = require('react');
 
-function Navbar({ user }) {
-  return (
-  )
-  }
-module.exports = Navbar;
+// function Navbar({ user }) {
+//   return (
+    
+//   )
+//   }
+// module.exports = Navbar;
