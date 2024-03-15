@@ -1,7 +1,6 @@
 const regForm = document.querySelector('.sign-up');
-const authForm = document.querySelector('.sign-in');
+const authForm = document.querySelector('.sign-in')
 
-//Регистрация
 if (regForm) {
   // повесили слушатель событий по кнопке
   regForm.addEventListener('submit', async (e) => {
@@ -10,34 +9,38 @@ if (regForm) {
 
     // в цель события попадают форма в виде объекта,
     // где ключ - name, значение - value
-    const { name, email, password, cpassword } = e.target;
+    const {
+      email, name, password, cpassword,
+    } = e.target;
+    if (email.value.trim() === '' || name.value.trim() === '' || password.value.trim() === '' || cpassword.value.trim() === '') {
+      alert('Заполните все поля!');
+    } else {
+      if (password.value === cpassword.value) {
+        const user = {
+          email: email.value,
+          name: name.value,
+          password: password.value,
+        };
 
-    if (password.value === cpassword.value) {
-      const user = {
-        name: name.value,
-        email: email.value,
-        password: password.value,
-      };
+        // отправили информацию с userom на сервер
+        const res = await fetch('/api/auth/registration', {
+          method: 'POST',
+          headers: { 'Content-type': 'application/json' },
+          body: JSON.stringify(user),
+        });
 
-      // отправили информацию с userom на сервер
-      const res = await fetch('/api/auth/registration', {
-        method: 'POST',
-        headers: { 'Content-type': 'application/json' },
-        body: JSON.stringify(user),
-      });
+        const data = await res.json();
 
-      const data = await res.json();
-
-      if (data.message === 'success') {
-        window.location.assign('/');
-        return;
+        if (data.message === 'success') {
+          window.location.assign('/');
+          return;
+        }
       }
+      console.log('пароли не совпадают');
     }
-    console.log('пароли не совпадают');
   });
 }
 
-//Авторизация
 if (authForm) {
   authForm.addEventListener('submit', async (e) => {
     e.preventDefault();

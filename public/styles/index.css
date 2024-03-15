@@ -3,3 +3,36 @@
     margin: 0;
     padding: 0;
   }
+
+  section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    color: #fff;
+  }
+
+  body {
+    animation: animate 20s
+    infinite linear alternate;
+  }
+
+  @keyframes animate {
+    0% {
+      background: #405ee2;
+    }
+    25% {
+      background: #d16f3a;
+    }  
+    50% {
+      background: #c33d3d;
+    }
+    75% {
+      background: #723b9a;
+    }
+    100% {
+      background: #60b8ae;
+    }
+
+  }
