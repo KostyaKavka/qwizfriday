@@ -1,12 +1,17 @@
 const React = require("react");
 const Layout = require("./Layout");
-// const CategoryItems = require('./CategoryItems');
+const CategoryItems = require('./CategoryItems');
 
-function MainPage({ title, category, user }) {
+function MainPage({ title, categories, user }) {
   return (
     <Layout title={title} user={user}>
-      <h1>Main page</h1>
-      {/* <CategoryItems category = {category} /> */}
+      <main>
+      <h1>Выбери тему</h1>
+      <div className="card__container">
+      {categories.map((el, index) => (<CategoryItems key={index} category={el} />))
+      }
+      </div>
+      </main>
     </Layout>
   );
 }
