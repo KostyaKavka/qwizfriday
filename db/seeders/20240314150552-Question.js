@@ -54,6 +54,34 @@ module.exports = {
           updatedAt: new Date(),
         },
 
+        {
+          answer: "В левом",
+          question: "Отгадайте в каком лифте этот врасавчик сделал фото?",
+          img: "",
+          categoryId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+
+
+        {
+          answer: "В левом",
+          question: "В каком холодильнике столько пакетов?",
+          img: "",
+          categoryId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+
+
+        {
+          answer: "Камил",
+          question: "Чья шикарная шевелюра на фото?",
+          img: "",
+          categoryId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
 
         {
           answer: "Правда",
