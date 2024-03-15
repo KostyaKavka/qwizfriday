@@ -1,26 +1,27 @@
-.card__container {
+.main {
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 0 10px; /* добавим небольшие отступы между карточками */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* добавляем ширину 100% */
   }
   
-  /* .card img {
-    width: 100px;
+  .card {
+    display: flex;
+    flex-wrap: wrap; /* разрешаем перенос строк, если элементы не помещаются */
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .card img {
+    padding: 20px 0px;
+    margin: auto;
+    width: auto; /* или нужная величина */
     height: auto;
     border-radius: 8px;
   }
   
-  .card h2 {
-    margin: 10px 0;
-    font-size: 1.2em;
+  h1 {
+    font-size: auto;
     color: #333;
+    text-align: center; /* центрируем текст */
   }
-  
-  .card p {
-    color: #666;
-  }
- */

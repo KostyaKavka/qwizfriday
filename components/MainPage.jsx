@@ -4,12 +4,11 @@ const CategoryItems = require("./CategoryItems");
 
 function MainPage({ title, categories, user }) {
   return (
-    <Layout title={title} user={user}>
-      <main>
+    <Layout title={title} user={user} className="main">
       <h1>Выбери тему</h1>
-      <div className="card__container">
+      <div className="card">
         {categories.map((el, index) => (
-          <CategoryItems key={index} category={el} />
+          <CategoryItems className='card' key={index} category={el} />
         ))}
       </div>
     </Layout>
