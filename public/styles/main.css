@@ -1,9 +1,27 @@
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.card__container {
-  display: flex;
-  justify-content: space-between;
-}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* добавляем ширину 100% */
+  }
+  
+  .card {
+    display: flex;
+    flex-wrap: wrap; /* разрешаем перенос строк, если элементы не помещаются */
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .card img {
+    padding: 20px 0px;
+    margin: auto;
+    width: auto; /* или нужная величина */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: auto;
+    color: #333;
+    text-align: center; /* центрируем текст */
+  }
