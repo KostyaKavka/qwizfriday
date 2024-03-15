@@ -1,4 +1,3 @@
-'use strict';
 const {
   Model
 } = require('sequelize');
@@ -29,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     score: {
       allowNull: true,
       type: DataTypes.INTEGER
-    }
+    },
   }, {
     sequelize,
     modelName: 'User',

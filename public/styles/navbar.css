@@ -49,6 +49,12 @@ nav {
     color: white; 
     font-weight: bold; 
   }
+
+  .ul_nav {
+    text-align: center;
+    font-size: 24px;
+   }
+
   
   .nav_li_left {
     float: left;
@@ -58,5 +64,12 @@ nav {
   .nav_li_right {
     float: right;
     font-size: 24px;
-    margin-right: 25px;
+    margin-right: 30px;
   }
+
+  .nav_li_center {
+    font-size: 24px;
+  }
+  
+
+
