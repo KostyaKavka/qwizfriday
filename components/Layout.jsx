@@ -8,6 +8,7 @@ module.exports = function Layout({ title, children }) {
         <title>{title}</title>
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/styles/main.css" />
 
         {/* <script src="/scripts/test.js" /> */}
       </head>
