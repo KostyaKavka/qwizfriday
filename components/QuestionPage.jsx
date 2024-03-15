@@ -1,13 +1,19 @@
 const React = require('react');
+const QuestionCard = require('./QuestionCard');
+const Layout = require('./Layout');
 
-function QuestionPage({ children }) {
+
+
+function QuestionPage({ title, question }) {
+  console.log(question);
   return (
+    <Layout title={title} >
+
     <div className="question-page">
-      {/* Ячейка для размещения QuestionCard */}
-      <div className="question-card-container">
-        {children}
-      </div>
+    <QuestionCard question={question}/>
     </div>
-  )
+      
+      </Layout>
+  );
   }
 module.exports = QuestionPage;
