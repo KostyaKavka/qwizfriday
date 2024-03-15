@@ -13,3 +13,4 @@ npx sequelize model:create --name Question --attributes answer:text,question:tex
 }
 
 npx sequelize seed:create --name Question
+Сашка молодец!!
