@@ -4,14 +4,14 @@ const Layout = require('./Layout');
 function RegistrationPage({ title }) {
   return (
     <Layout title={title}>
-      <div className='container-registration'>
-        <h2>Введите данные для регистрации:</h2>
+      <div className='container-auth'>
+        <h2>Заполните форму регистрации:</h2>
         <form className='sign-up'>
-          <input type='text' name='name' placeholder='name' />
-          <input type='email' name='email' placeholder='email' />
-          <input type='password' name='password' placeholder='password' />
-          <input type='password' name='cpassword' placeholder='cpassword' />
-          <button>Зарегистрироваться</button>
+          <input className='registration__form-input' type='text' name='name' placeholder='name' />
+          <input className='registration__form-input' type='email' name='email' placeholder='email' />
+          <input className='registration__form-input' type='password' name='password' placeholder='password' />
+          <input className='registration__form-input' type='password' name='cpassword' placeholder='repeat password' />
+          <button className='form__input-button'>Registration</button>
         </form>
       </div>
     </Layout>
