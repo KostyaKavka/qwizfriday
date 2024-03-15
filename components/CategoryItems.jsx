@@ -1,7 +1,6 @@
 const React = require("react");
 
 function CategoryItems({ category }) {
-  console.log(category)
   return (
     <div>
         <h2>{ category.title }</h2>
